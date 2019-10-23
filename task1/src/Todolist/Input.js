@@ -5,6 +5,7 @@ export default class Input extends Component {
         if(e.keyCode===13){
             var val={'title':e.target.value,'done':'true'};
             this.props.add(val);
+            e.target.value='';
         }
     }
     render() {
