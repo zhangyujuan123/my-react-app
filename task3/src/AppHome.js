@@ -4,11 +4,11 @@ import { NavBar, Icon,Tabs,Carousel, Grid ,Card} from 'antd-mobile';
 
 
 const data1 = [{num:'h_03',text:'热门品牌'},{num:'h_05',text:'私人搭配师'},{num:'h_07',text:'选购指南'}].map((idx) => ({
-    icon: '/images/'+idx.num+'.png',
+    icon: 'images/'+idx.num+'.png',
     content:idx.text
   }));
 const data2=[{name:'tuijian'}].map((idx)=>({
-    icon:'/images/'+idx.name+'.jpg'
+    icon:'images/'+idx.name+'.jpg'
 }));
 export default class AppHome extends Component {
     render() {
@@ -25,7 +25,7 @@ export default class AppHome extends Component {
                         >
                         {[1,2].map(val => (
                             <img
-                                src={'/images/home'+val+'.png'}
+                                src={'images/home'+val+'.png'}
                                 alt=""
                                 style={{ width: '100%', verticalAlign: 'top' }}
                                 onLoad={() => {
@@ -48,7 +48,7 @@ export default class AppHome extends Component {
                         <p style={{marginLeft:'12.5px'}}>热门推荐</p>
                         <Card style={{position:'relative',overflow:'hidden'}}>
                             <Card.Body style={{margin:'0',padding:'0',width:'100%'}}>
-                                <img src='/images/tuijian.jpg' style={{width:'100%',height:'100%'}}/>
+                                <img src='images/tuijian.jpg' style={{width:'100%',height:'100%'}}/>
                             </Card.Body>
                             <Card.Footer content={<p style={{position:'absolute',bottom:'5px',color:'white',width:'100%',textAlign:'center'}}>什么是英伦装修风格 英伦风家装 英伦风格装修效果图</p>} />
                         </Card>

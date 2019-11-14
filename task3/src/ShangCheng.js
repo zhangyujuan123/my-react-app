@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { NavBar, Carousel,SearchBar ,Grid} from 'antd-mobile';
 
 const data1 = [{num:1,txt:'桌'},{num:2,txt:'床'},{num:3,txt:'椅'},{num:4,txt:'几'},{num:5,txt:'柜'},{num:6,txt:'书架'},{num:7,txt:'沙发'},{num:8,txt:'家居饰品'},{num:9,txt:'户外家具'},{num:10,txt:'全部分类'}].map((idx) => ({
-    icon: '/images/shop'+idx.num+'.jpg',
+    icon: 'images/shop'+idx.num+'.jpg',
     txt:idx.txt
   }));
 const data2=[{num:1,txt:'Top Art Studio 欧式风格精细...',money:'¥39.95'},{num:2,txt:'顺顺工艺欧式风格塑料外框黑...',money:"¥83.99"}].map((idx)=>({
-    icon:'/images/store'+idx.num+'.png',
+    icon:'images/store'+idx.num+'.png',
     txt:idx.txt,
     money:idx.money
 }))
@@ -33,7 +33,7 @@ export default class ShangCheng extends Component {
                     style={{  width: '100%', height:176,position:'relative' }}
                     >
                         <img
-                            src='/images/store.png'
+                            src='images/store.png'
                             alt=""
                             style={{ width: '100%', height:'100%',verticalAlign: 'top' }}
                             onLoad={() => {

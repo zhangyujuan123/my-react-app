@@ -10,7 +10,7 @@ const tabs = [
     {title:'个性色彩'},
 ]
 const data1 = [{num:1,text:'橙色律动'},{num:2,text:'儿童房'},{num:3,text:'翻滚吧，地毯君'},{num:4,text:'角落里的遐想'},{num:5,text:'橙色律动'},{num:5,text:'橙色律动'}].map((idx) => ({
-    icon: '/images/l'+idx.num+'.png',
+    icon: 'images/l'+idx.num+'.png',
     content:idx.text
   }));
 export default class LingGan extends Component {
@@ -36,9 +36,9 @@ export default class LingGan extends Component {
                         <div style={{ padding: '12.5px' }}>
                         <img src={dataItem.icon} style={{ width: '80%', height: '80%' }} alt="" />
                         <div style={{ color: '#888', fontSize: '14px', marginTop: '12px'}}>
-                            <img src="/images/p1.png" style={{maxWidth:'10%',maxHeight:'10%',position:'absolute',left:'15%',bottom:'12%'}}/>
+                            <img src="images/p1.png" style={{maxWidth:'10%',maxHeight:'10%',position:'absolute',left:'15%',bottom:'12%'}}/>
                             <span style={{color:'#686868'}}>{dataItem.content}</span>
-                            <img src='/images/xin.png' style={{float:'right',marginRight:'35px'}}/>
+                            <img src='images/xin.png' style={{float:'right',marginRight:'35px'}}/>
                         </div>
                         </div>
                     )}
